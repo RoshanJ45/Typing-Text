@@ -1,0 +1,31 @@
+    body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #1e1e1e;
+color: #fff;
+font-family: monospace;
+}
+.typing-container {
+font-size: 2rem;
+border-right: 2px solid white;
+white-space: nowrap;
+overflow: hidden;
+width: 0;
+animation: typing 3s steps(22) forwards,
+blink 0.7s infinite;
+}
+@keyframes typing {
+from {
+width: 0;
+}
+to {
+width: 14ch;
+}
+}
+@keyframes blink {
+50% {
+border-color: transparent;
+}
+}
